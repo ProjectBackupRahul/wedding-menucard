@@ -1,5 +1,6 @@
 import "./styles.css";
 import Menu from "./Components/Menu";
+import ResponsiveFooter from "./Components/Footer";
 import Categories from "./Components/Categories";
 import items from "./Data/data";
 import { useState } from "react";
@@ -28,7 +29,9 @@ export default function App() {
         </div>
         <Categories categories={categories} filterItems={filterItems} />
         <Menu items={menuItems} />
+      
       </section>
+      <ResponsiveFooter />
     </main>
   );
 }
